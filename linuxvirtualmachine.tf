@@ -34,10 +34,7 @@ resource "azurerm_linux_virtual_machine" "example" {
     azurerm_network_interface.maryaminterface.id,
   ]
 
-  admin_ssh_key {
-    username   = "adminuser"
-    public_key = file("D:\\linux\\id_rsa.pub")
-  }
+  admin_password ="password1234$"
 
   os_disk {
     caching              = "ReadWrite"
