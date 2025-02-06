@@ -9,7 +9,6 @@ resource "azurerm_web_application_firewall_policy" "fire1" {
     mode = "Prevention"
     request_body_check = true
   }
-
   custom_rules {
     name      = "BlockSQLInjection"
     priority  = 1
