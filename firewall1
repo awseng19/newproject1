@@ -3,12 +3,12 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "firewall" {
-  name     = "example-res-group"
+  name     = "firewallproject"
   location = "East US"
 }
 
 resource "azurerm_web_application_firewall_policy" "fire1" {
-  name                = "yourfirstnamemcitwafi"
+  name                = "maryam"
   resource_group_name = azurerm_resource_group.mcit420zz5um.name
   location            = azurerm_resource_group.mcit420zz5um.location
 
