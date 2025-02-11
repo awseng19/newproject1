@@ -1,15 +1,10 @@
 
-# Create a resource group
-resource "azurerm_resource_group" "Wafpolicy1" {
-  name     = "example-rg"
-  location = "East US"
-}
- 
+
 # Create WAF Policy
-resource "azurerm_web_application_firewall_policy" "example" {
-  name                = "example-waf-policy"
-  resource_group_name = azurerm_resource_group.example.name
-  location            = azurerm_resource_group.example.location
+resource "azurerm_web_application_firewall_policy" "mcit420zz5um3" {
+  name                = "pp-waf-policy"
+  resource_group_name = azurerm_resource_group.mcit420zz5um3.name
+  location            = azurerm_resource_group.mcit420zz5um3.location
  
   custom_rules {
     name      = "BlockSQLInjection"
