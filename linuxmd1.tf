@@ -1,5 +1,5 @@
 module "linuxservers" {
-    source              = "Azure/vm/azurerm"
+    source              = "./module_storage_account"
     location            = "West US 2"
     vm_os_simple        = "UbuntuServer"
     public_ip_dns       = ["linsimplevmips"] // change to a unique name per datacenter region
